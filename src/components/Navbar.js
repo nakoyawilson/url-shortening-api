@@ -29,24 +29,24 @@ const Navbar = () => {
       <div className={`nav-links-wrapper ${navOpen && "open"}`}>
         <ul className="nav-links">
           <li>
-            <a href="#" className="nav-link" onClick={closeMenu}>
+            <a href="/" className="nav-link" onClick={closeMenu}>
               Features
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link" onClick={closeMenu}>
+            <a href="/" className="nav-link" onClick={closeMenu}>
               Pricing
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link" onClick={closeMenu}>
+            <a href="/" className="nav-link" onClick={closeMenu}>
               Resources
             </a>
           </li>
         </ul>
         <ul className="nav-links login">
           <li>
-            <a href="#" className="nav-link" onClick={closeMenu}>
+            <a href="/" className="nav-link" onClick={closeMenu}>
               Login
             </a>
           </li>

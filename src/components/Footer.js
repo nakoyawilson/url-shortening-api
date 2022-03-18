@@ -18,17 +18,17 @@ const Footer = () => {
       <span className="links-heading">Features</span>
       <ul className="footer-links">
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Link Shortening
           </a>
         </li>
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Branded Links
           </a>
         </li>
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Analytics
           </a>
         </li>
@@ -36,17 +36,17 @@ const Footer = () => {
       <span className="links-heading">Resources</span>
       <ul className="footer-links">
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Blog
           </a>
         </li>
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Developers
           </a>
         </li>
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Support
           </a>
         </li>
@@ -54,22 +54,22 @@ const Footer = () => {
       <span className="links-heading">Company</span>
       <ul className="footer-links">
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             About
           </a>
         </li>
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Our Team
           </a>
         </li>
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Careers
           </a>
         </li>
         <li>
-          <a href="#" className="footer-link">
+          <a href="/" className="footer-link">
             Contact
           </a>
         </li>
