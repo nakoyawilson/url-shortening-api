@@ -8,6 +8,10 @@ import Form from "./components/Form";
 import ShortLinkContainer from "./components/ShortLinkContainer";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
+import illustrationWorking from "./images/illustration-working.svg";
+import brandRecognition from "./images/icon-brand-recognition.svg";
+import detailedRecords from "./images/icon-detailed-records.svg";
+import fullyCustomizable from "./images/icon-fully-customizable.svg";
 import "./App.css";
 
 const App = () => {
@@ -72,18 +76,23 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <header>
+    <>
+      <header className="header">
         <Navbar />
-        <h1>More than just shorter links</h1>
-        <Paragraph
-          paragraphClasses=""
-          paragraphContent="Build your brand’s recognition and get detailed insights on how your
+        <section className="hero">
+          <div className="image-wrapper">
+            <img src={illustrationWorking} alt="" className="hero-image" />
+          </div>
+          <h1 className="main-heading">More than just shorter links</h1>
+          <Paragraph
+            paragraphClasses="paragraph"
+            paragraphContent="Build your brand’s recognition and get detailed insights on how your
           links are performing."
-        />
-        <ButtonLink content="Get Started" />
+          />
+          <ButtonLink content="Get Started" />
+        </section>
       </header>
-      <main>
+      <main className="main">
         <Form
           labelText="Shorten a link here..."
           buttonText="Shorten It!"
@@ -91,45 +100,47 @@ const App = () => {
           handleInputChange={handleInputChange}
           handleSubmit={handleSubmit}
         />
-        <div>
+        <div className="shortened-links">
           {shortenedLinks.length > 0 && shortenedLinks.map(displayShortLinks)}
         </div>
-        <section>
-          <h2>Advanced Statistics</h2>
+        <section className="statistics">
+          <h2 className="section-heading">Advanced Statistics</h2>
           <Paragraph
-            paragraphClasses=""
+            paragraphClasses="paragraph"
             paragraphContent="Track how your links are performing across the web with our advanced
       statistics dashboard."
           />
-          <Card
-            cardTitle="Brand Recognition"
-            cardIcon=""
-            paragraphClasses=""
-            paragraphContent="Boost your brand recognition with each click. Generic links don’t mean a
+          <div className="cards-wrapper">
+            <Card
+              cardTitle="Brand Recognition"
+              cardIcon={brandRecognition}
+              paragraphClasses="paragraph"
+              paragraphContent="Boost your brand recognition with each click. Generic links don’t mean a
       thing. Branded links help instil confidence in your content."
-          />
-          <Card
-            cardTitle="Detailed Records"
-            cardIcon=""
-            paragraphClasses=""
-            paragraphContent="Gain insights into who is clicking your links. Knowing when and where
+            />
+            <Card
+              cardTitle="Detailed Records"
+              cardIcon={detailedRecords}
+              paragraphClasses="paragraph"
+              paragraphContent="Gain insights into who is clicking your links. Knowing when and where
       people engage with your content helps inform better decisions."
-          />
-          <Card
-            cardTitle="Fully Customizable"
-            cardIcon=""
-            paragraphClasses=""
-            paragraphContent="Improve brand awareness and content discoverability through customizable
+            />
+            <Card
+              cardTitle="Fully Customizable"
+              cardIcon={fullyCustomizable}
+              paragraphClasses="paragraph"
+              paragraphContent="Improve brand awareness and content discoverability through customizable
       links, supercharging audience engagement."
-          />
+            />
+          </div>
         </section>
-        <section>
-          <h2>Boost your links today</h2>
+        <section className="boost">
+          <h2 className="section-heading">Boost your links today</h2>
           <ButtonLink content="Get Started" />
         </section>
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

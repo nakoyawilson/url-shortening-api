@@ -1,10 +1,15 @@
 import ButtonLink from "./ButtonLink";
+import logo from "../images/logo.svg";
+import menu from "../images/menu.svg";
 
 const Navbar = () => {
   return (
-    <nav>
-      <img src="images/logo.svg" alt="" />
-      <ul>
+    <nav className="navbar">
+      <img src={logo} alt="Shortly logo" />
+      <button className="navigation-menu">
+        <img src={menu} alt="" />
+      </button>
+      <ul className="nav-links">
         <li>
           <a href="#">Features</a>
         </li>
@@ -15,7 +20,7 @@ const Navbar = () => {
           <a href="#">Resources</a>
         </li>
       </ul>
-      <ul>
+      <ul className="nav-links">
         <li>
           <a href="#">Login</a>
         </li>

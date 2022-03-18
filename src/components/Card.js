@@ -2,9 +2,11 @@ import Paragraph from "./Paragraph";
 
 const Card = (props) => {
   return (
-    <div>
-      <img src="" alt="" className="" />
-      <h3>{props.cardTitle}</h3>
+    <div className="card">
+      <div className="icon-wrapper">
+        <img src={props.cardIcon} alt="" className="card-icon" />
+      </div>
+      <h3 className="card-heading">{props.cardTitle}</h3>
       <Paragraph
         paragraphClasses={props.paragraphClasses}
         paragraphContent={props.paragraphContent}

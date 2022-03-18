@@ -1,6 +1,6 @@
 const Form = (props) => {
   return (
-    <form onSubmit={props.handleSubmit}>
+    <form onSubmit={props.handleSubmit} className="shorten-form">
       <label htmlFor="url-input" name="urlInput" className="visually-hidden">
         {props.labelText}
       </label>
@@ -10,8 +10,9 @@ const Form = (props) => {
         id="url-input"
         value={props.inputValue}
         onChange={props.handleInputChange}
+        className="url-input"
       />
-      <button>{props.buttonText}</button>
+      <button className="shorten-button">{props.buttonText}</button>
     </form>
   );
 };
