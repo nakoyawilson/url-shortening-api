@@ -1,6 +1,6 @@
 const ButtonLink = (props) => {
   return (
-    <a href="#" className="button-link">
+    <a href="/" className="button-link">
       {props.content}
     </a>
   );
