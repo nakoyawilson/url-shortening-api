@@ -114,6 +114,7 @@ ul {
 .nav-links {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3rem;
 }
 
@@ -137,6 +138,9 @@ ul {
 
 .login .button-link {
   width: 100%;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  padding: 1.2rem 1rem 0.9rem;
 }
 
 .lock-scroll {
@@ -438,4 +442,66 @@ ul {
 
 .attribution a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries */
+@media screen and (min-width: 376px) {
+  /* Header */
+
+  .header {
+    width: min(76.9%, 110.8rem);
+    margin: 4.8rem auto 7.8rem;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    justify-content: flex-start;
+    gap: 4.453rem;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  .nav-links-wrapper {
+    width: 100%;
+    position: static;
+    background: none;
+    padding: 0;
+    border-radius: 10;
+    transform: translateY(0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .nav-links:nth-of-type(1) {
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+    width: 26.5rem;
+    justify-content: space-between;
+  }
+
+  .nav-links:nth-of-type(2) {
+    gap: 3.7rem;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--grayish-violet);
+  }
+
+  .login .button-link {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding: 0.9rem 2.3rem 0.8rem 2.4rem;
+  }
 }
