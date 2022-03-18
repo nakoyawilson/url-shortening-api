@@ -7,6 +7,7 @@
   --red: hsl(0, 87%, 67%);
   --gray: hsl(0, 0%, 75%);
   --grayish-violet: hsl(257, 7%, 63%);
+  --grayish-violet-transparent: hsla(257, 7%, 63%, 0.25);
   --dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
   --white: hsl(0, 0%, 100%);
@@ -131,6 +132,7 @@ svg {
   margin-top: 16.8rem;
   background-color: var(--bg-gray);
   position: relative;
+  padding-top: 8rem;
 }
 
 /* Form */
@@ -177,12 +179,59 @@ svg {
   margin-top: 1.6rem;
 }
 
+/* Shortened Links */
+.shortened-links-wrapper {
+  width: min(87.2%, 32.7rem);
+  margin: 2.4rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.shortlink-container {
+  background: var(--white);
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.12px;
+}
+
+.original-link-wrapper {
+  padding: 0.6rem 1.6rem;
+  border-bottom: 1px solid var(--grayish-violet-transparent);
+}
+
+.original-link {
+  color: var(--dark-blue);
+}
+
+.shortened-link-wrapper {
+  padding: 0.6rem 1.6rem 1.6rem;
+}
+
+.shortened-link {
+  color: var(--cyan);
+}
+
+.copy-button {
+  margin-top: 0.8rem;
+  background: var(--cyan);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  width: 100%;
+  padding: 0.9rem 1rem 0.7rem;
+  color: var(--white);
+}
+
 /* Advanced Statistics */
 
 .statistics {
   width: min(87.2%, 32.7rem);
-  margin: 0 auto;
-  padding-top: 16rem;
+  margin: 8rem auto 0;
+  /* padding-top: 8rem; */
 }
 
 .statistics .section-heading {

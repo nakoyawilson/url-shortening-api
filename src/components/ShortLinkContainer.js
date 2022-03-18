@@ -2,14 +2,14 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const ShortLinkContainer = (props) => {
   return (
-    <div>
-      <div>
-        <p>{props.originalLink}</p>
+    <div className="shortlink-container">
+      <div className="original-link-wrapper">
+        <p className="original-link">{props.originalLink}</p>
       </div>
-      <div>
-        <p>{props.shortLink}</p>
+      <div className="shortened-link-wrapper">
+        <p className="shortened-link">{props.shortLink}</p>
         <CopyToClipboard text={props.shortLink}>
-          <button>Copy</button>
+          <button className="copy-button">Copy</button>
         </CopyToClipboard>
       </div>
     </div>

@@ -100,9 +100,11 @@ const App = () => {
           handleInputChange={handleInputChange}
           handleSubmit={handleSubmit}
         />
-        <div className="shortened-links">
-          {shortenedLinks.length > 0 && shortenedLinks.map(displayShortLinks)}
-        </div>
+        {shortenedLinks.length > 0 && (
+          <div className="shortened-links-wrapper">
+            {shortenedLinks.map(displayShortLinks)}
+          </div>
+        )}
         <section className="statistics">
           <h2 className="section-heading">Advanced Statistics</h2>
           <Paragraph
