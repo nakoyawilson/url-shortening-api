@@ -44,7 +44,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <ul className="nav-links login" onClick={closeMenu}>
+        <ul className="nav-links login">
           <li>
             <a href="#" className="nav-link" onClick={closeMenu}>
               Login
