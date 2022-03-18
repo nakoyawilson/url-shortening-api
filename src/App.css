@@ -47,6 +47,10 @@ svg {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -91,8 +95,52 @@ svg {
   align-items: center;
 }
 
+.nav-links-wrapper {
+  width: min(87.2%, 32.7rem);
+  position: fixed;
+  top: 9.6rem;
+  background: var(--dark-violet);
+  padding: 4rem 2.4rem;
+  border-radius: 10px;
+  transform: translateY(-150%);
+  transition: 500ms ease-in-out;
+}
+
+.nav-links-wrapper.open {
+  transform: translateY(0);
+  transition: 500ms ease-in-out;
+}
+
 .nav-links {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.nav-links:nth-of-type(1) {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--grayish-violet-transparent);
+  margin-bottom: 3.2rem;
+}
+
+.nav-links:nth-of-type(2) {
+  gap: 2.4rem;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.login .button-link {
+  width: 100%;
+}
+
+.lock-scroll {
+  overflow: hidden;
 }
 
 /* Hero Section */
