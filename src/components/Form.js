@@ -6,6 +6,7 @@ const Form = (props) => {
       </label>
       <input
         type="text"
+        name="urlInput"
         placeholder={props.labelText}
         id="url-input"
         value={props.inputValue}
