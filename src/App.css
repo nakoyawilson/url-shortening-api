@@ -424,7 +424,7 @@ ul {
 }
 
 .footer-links {
-  margin-top: 2.2rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -728,6 +728,8 @@ ul {
   }
 
   .footer-logo {
+    position: relative;
+    right: 0.3rem;
     margin-right: 18rem;
   }
 
@@ -736,9 +738,13 @@ ul {
     margin-top: 0;
   }
 
-  .footer-links-wrapper:nth-of-type(3) {
+  .footer-links-wrapper {
+    margin-right: 5rem;
+  }
+
+  .footer-links-wrapper:nth-of-type(1) {
     position: relative;
-    right: 2.2rem;
+    left: 2.4rem;
   }
 
   .social-icons-wrapper {
