@@ -13,6 +13,9 @@ const Form = (props) => {
         onChange={props.handleInputChange}
         className="url-input"
       />
+      <p className="error-message" id="error-msg">
+        Please add a link
+      </p>
       <button className="shorten-button">{props.buttonText}</button>
     </form>
   );

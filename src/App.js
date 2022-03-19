@@ -56,13 +56,22 @@ const App = () => {
   };
 
   const handleSubmit = (e) => {
+    const inputField = document.querySelector("#url-input");
+    const errorMessage = document.querySelector("#error-msg");
     if (urlInput === "") {
-      document.querySelector("#url-input").classList.add("input-error");
-      console.log("Please add a link");
+      inputField.classList.add("input-error");
+      errorMessage.style.display = "block";
+      inputField.setAttribute("aria-invalid", "true");
+      inputField.setAttribute("aria-describedBy", "error-msg");
+      document.querySelector(".main").classList.add("error-padding");
     } else {
-      document.querySelector("#url-input").classList.remove("input-error");
+      errorMessage.style.display = "none";
+      inputField.classList.remove("input-error");
+      inputField.removeAttribute("aria-invalid");
+      inputField.removeAttribute("aria-describedBy");
       getShortenedLink(urlInput);
       setUrlInput("");
+      document.querySelector(".main").classList.remove("error-padding");
     }
     e.preventDefault();
   };
