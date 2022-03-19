@@ -157,7 +157,7 @@ ul {
   width: 100%;
 }
 
-.header .image-wrapper {
+.hero .image-wrapper {
   width: 51.1rem;
   margin-bottom: 3.7rem;
 }
@@ -170,7 +170,7 @@ ul {
   color: var(--dark-blue);
 }
 
-.header .paragraph {
+.hero .paragraph {
   font-size: 1.8rem;
   line-height: 3rem;
   letter-spacing: 0.122727px;
@@ -215,7 +215,6 @@ ul {
 ::placeholder {
   color: var(--dark-blue);
   letter-spacing: 0.12px;
-  mix-blend-mode: normal;
   opacity: 0.5;
 }
 
@@ -283,7 +282,6 @@ ul {
 .statistics {
   width: min(87.2%, 32.7rem);
   margin: 8rem auto 0;
-  /* padding-top: 8rem; */
 }
 
 .statistics .section-heading {
@@ -360,6 +358,7 @@ ul {
   font-size: 1.5rem;
   line-height: 2.6rem;
   color: var(--grayish-violet);
+  margin-top: 1.2rem;
 }
 
 /* Boost */
@@ -440,10 +439,6 @@ ul {
   text-decoration: none;
 }
 
-.attribution a:hover {
-  text-decoration: underline;
-}
-
 /* Media Queries */
 @media screen and (min-width: 376px) {
   /* Header */
@@ -503,5 +498,220 @@ ul {
     font-size: 1.5rem;
     line-height: 2.2rem;
     padding: 0.9rem 2.3rem 0.8rem 2.4rem;
+  }
+
+  /* Hero Section */
+
+  .hero {
+    margin-top: 7.8rem;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .hero .image-wrapper {
+    width: 73.3rem;
+    margin-bottom: 0;
+  }
+
+  .main-heading {
+    font-size: 8rem;
+    line-height: 9rem;
+    letter-spacing: -2px;
+  }
+
+  .hero .paragraph {
+    width: min(100%, 54rem);
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.15px;
+    margin: 0.5rem 0 3.8rem;
+  }
+
+  .hero .button-link {
+    margin-inline: 0;
+  }
+
+  /* Main */
+
+  .main {
+    margin-top: 22.2rem;
+    padding-top: 8.4rem;
+  }
+
+  /* Form */
+
+  .shorten-form {
+    width: min(77%, 111rem);
+    padding: 5.2rem 6.5rem 5.2rem 6.4rem;
+    position: absolute;
+    top: -8.4rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  .url-input {
+    width: 100%;
+    padding: 1.4rem 3.2rem;
+    font-size: 2rem;
+    letter-spacing: 0.15px;
+  }
+
+  .shorten-button {
+    font-size: 2rem;
+    line-height: 3rem;
+    /* width: fit-content; */
+    padding: 1.8rem 4rem 1.6rem 4.1rem;
+    margin-top: 0;
+  }
+
+  /* Shortened Links */
+  .shortened-links-wrapper {
+    width: min(77%, 111rem);
+    gap: 1.6rem;
+  }
+
+  .shortlink-container {
+    font-size: 2rem;
+    letter-spacing: 0.15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2.4rem 1.6rem 3.2rem;
+  }
+
+  .original-link-wrapper {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .shortened-link-wrapper {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.4rem;
+  }
+
+  .copy-button {
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    width: 10.3rem;
+    padding: 1rem 1rem 0.7rem;
+  }
+
+  /* Advanced Statistics */
+
+  .statistics {
+    width: min(77%, 111rem);
+    margin: 12rem auto 0;
+  }
+
+  .statistics .section-heading {
+    font-size: 4rem;
+    letter-spacing: -1px;
+  }
+
+  .statistics .paragraph {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.122727px;
+    width: min(100%, 54rem);
+    margin: 1.8rem auto 0;
+  }
+
+  /* Cards */
+
+  .cards-wrapper {
+    margin-top: 10rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    height: 35.5rem;
+  }
+
+  .card {
+    text-align: left;
+  }
+
+  .card:nth-of-type(1)::before {
+    top: auto;
+    bottom: 10.7rem;
+    margin-inline: auto;
+    height: 0.8rem;
+    width: 111rem;
+  }
+
+  .card:nth-of-type(2) {
+    padding-bottom: 4.1rem;
+    align-self: center;
+  }
+
+  .card:nth-of-type(3) {
+    align-self: flex-end;
+  }
+
+  .icon-wrapper {
+    left: 3.2rem;
+    right: auto;
+    margin-inline: 0;
+  }
+
+  .card .paragraph {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    margin-top: 1.2rem;
+  }
+
+  /* Boost */
+
+  .boost {
+    margin-top: 12rem;
+    padding: 5.7rem;
+  }
+
+  .boost .section-heading {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    margin-bottom: 3.2rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 7.2rem 7.2rem 0;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    text-align: left;
+  }
+
+  .footer-logo {
+    margin-inline: auto;
+  }
+
+  .footer .logo {
+    fill: var(--white);
+  }
+
+  .links-heading,
+  .links-heading:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .social-icons-wrapper {
+    margin-top: 0;
+  }
+
+  .attribution {
+    margin-top: 7.2rem;
+    grid-column: span 5;
+    text-align: center;
+  }
+
+  .attribution a:hover {
+    text-decoration: underline;
   }
 }

@@ -83,13 +83,15 @@ const App = () => {
           <div className="image-wrapper">
             <img src={illustrationWorking} alt="" className="hero-image" />
           </div>
-          <h1 className="main-heading">More than just shorter links</h1>
-          <Paragraph
-            paragraphClasses="paragraph"
-            paragraphContent="Build your brand’s recognition and get detailed insights on how your
+          <div>
+            <h1 className="main-heading">More than just shorter links</h1>
+            <Paragraph
+              paragraphClasses="paragraph"
+              paragraphContent="Build your brand’s recognition and get detailed insights on how your
           links are performing."
-          />
-          <ButtonLink content="Get Started" />
+            />
+            <ButtonLink content="Get Started" />
+          </div>
         </section>
       </header>
       <main className="main">
