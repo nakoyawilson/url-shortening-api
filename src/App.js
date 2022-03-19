@@ -83,7 +83,7 @@ const App = () => {
           <div className="image-wrapper">
             <img src={illustrationWorking} alt="" className="hero-image" />
           </div>
-          <div>
+          <div className="text-content">
             <h1 className="main-heading">More than just shorter links</h1>
             <Paragraph
               paragraphClasses="paragraph"
