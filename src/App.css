@@ -457,7 +457,6 @@ ul {
   margin-top: 4.8rem;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   height: fit-content;
   gap: 2.4rem;
 }
