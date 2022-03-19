@@ -1,7 +1,7 @@
 const Form = (props) => {
   return (
     <form onSubmit={props.handleSubmit} className="shorten-form">
-      <label htmlFor="url-input" name="urlInput" className="visually-hidden">
+      <label htmlFor="url-input" className="visually-hidden">
         {props.labelText}
       </label>
       <input
