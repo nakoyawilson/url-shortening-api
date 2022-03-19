@@ -57,8 +57,10 @@ const App = () => {
 
   const handleSubmit = (e) => {
     if (urlInput === "") {
+      document.querySelector("#url-input").classList.add("input-error");
       console.log("Please add a link");
     } else {
+      document.querySelector("#url-input").classList.remove("input-error");
       getShortenedLink(urlInput);
       setUrlInput("");
     }

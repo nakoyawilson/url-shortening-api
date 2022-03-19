@@ -12,6 +12,7 @@
   --very-dark-violet: hsl(260, 8%, 14%);
   --white: hsl(0, 0%, 100%);
   --bg-gray: hsla(225, 33%, 95%, 1);
+  --button-hover: hsla(180, 56%, 75%, 1);
 }
 
 /* CSS Reset */
@@ -215,10 +216,18 @@ ul {
   line-height: 3.6rem;
 }
 
+.input-error {
+  border: 3px solid var(--red);
+}
+
 ::placeholder {
   color: var(--dark-blue);
   letter-spacing: 0.12px;
   opacity: 0.5;
+}
+
+.input-error::placeholder {
+  color: var(--red);
 }
 
 .shorten-button {
@@ -450,6 +459,15 @@ ul {
 
 /* Media Queries */
 @media screen and (min-width: 1250px) {
+  /* General Styles */
+
+  .button-link:hover,
+  .shorten-button:hover,
+  .copy-button:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;
+  }
+
   /* Header */
 
   .header {
@@ -502,6 +520,10 @@ ul {
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: var(--grayish-violet);
+  }
+
+  .nav-link:hover {
+    color: var(--dark-blue);
   }
 
   .login .button-link {
@@ -747,8 +769,20 @@ ul {
     left: 2.4rem;
   }
 
+  .footer-link:hover {
+    color: var(--cyan);
+  }
+
   .social-icons-wrapper {
     margin-top: 0;
+  }
+
+  .social-icon-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .social-icon-wrapper:hover .social-icon {
+    fill: var(--cyan);
   }
 
   .attribution {
@@ -756,6 +790,6 @@ ul {
   }
 
   .attribution a:hover {
-    text-decoration: underline;
+    color: var(--cyan);
   }
 }
