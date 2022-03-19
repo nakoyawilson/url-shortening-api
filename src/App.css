@@ -137,6 +137,10 @@ ul {
   text-decoration: none;
 }
 
+.button-link-wrapper {
+  width: 100%;
+}
+
 .login .button-link {
   width: 100%;
   font-size: 1.8rem;

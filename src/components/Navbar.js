@@ -50,7 +50,7 @@ const Navbar = () => {
               Login
             </a>
           </li>
-          <li>
+          <li className="button-link-wrapper">
             <ButtonLink content="Sign Up" onClick={closeMenu} />
           </li>
         </ul>
