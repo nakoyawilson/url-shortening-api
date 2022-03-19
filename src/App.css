@@ -311,6 +311,10 @@ ul {
   color: var(--white);
 }
 
+.copy-button.copied {
+  background: var(--dark-violet);
+}
+
 /* Advanced Statistics */
 
 .statistics {
@@ -485,7 +489,7 @@ ul {
 
   .button-link:hover,
   .shorten-button:hover,
-  .copy-button:hover {
+  .copy-button:not(.copied):hover {
     background-color: var(--button-hover);
     cursor: pointer;
   }
